@@ -1,0 +1,23 @@
+.section {
+  height: 100vh;
+  min-height: 650px;
+
+  &-title {
+    display: inline-block;
+    font-family: "gagalin";
+    font-size: 72px;
+    color: $yellow;
+  }
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 8px 17px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  background: $red;
+}

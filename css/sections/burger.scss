@@ -1,0 +1,37 @@
+.burger {
+  position: relative;
+
+  &-content {
+    @include middle-content;
+  }
+
+  background: url("../img/bg/burger-bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.burger-content__left,
+.burger-content__right  {
+  float: left;
+  width: 50%;
+}
+
+.burger-content__photo {
+  display: inline-block;
+
+  &-item {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.burger-content__right {
+  padding-top: 132px;
+}
+
+.burger-content__desc {
+  font-family: "lifehack", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 65px;
+  line-height: 1em;
+  color: #fff;
+  text-transform: lowercase;
+}

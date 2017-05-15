@@ -1,0 +1,26 @@
+// colors 
+$yellow: #f9b43b;
+$red: #e45028;
+$black: #2f3234;
+
+// mixins
+@import "helpers/mixins";
+
+// layout setups
+@import "layout/normalize";
+@import "layout/adjustment";
+@import "layout/fonts";
+
+// sections
+@import "sections/content";
+@import "sections/popups";
+@import "sections/header";
+@import "sections/burger";
+@import "sections/features";
+@import "sections/slider";
+@import "sections/team";
+@import "sections/menu";
+@import "sections/review";
+@import "sections/order";
+@import "sections/map";
+@import "sections/footer";

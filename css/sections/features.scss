@@ -1,0 +1,36 @@
+.features {
+  position: relative;
+  background: url("../img/bg/features-bg.jpg") no-repeat center center;
+  background-size: cover;
+
+  &-content {
+    @include middle-content;
+  }
+
+  text-align: center;
+}
+
+.section-title_black {
+  margin-bottom: 80px;
+  color: $black;
+}
+
+.features__item {
+  display: inline-block;
+  width: 300px;
+  vertical-align: top;
+}
+
+.features__icon {
+  margin-bottom: 35px;
+}
+
+.features__title {
+  margin-bottom: 5px;
+  font-family: "lifehack", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 24px;
+}
+
+.features__desc {
+  font-size: 14px;
+}
