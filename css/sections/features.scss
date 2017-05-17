@@ -3,7 +3,7 @@
   background: url("../img/bg/features-bg.jpg") no-repeat center center;
   background-size: cover;
 
-  &-content {
+  &__content {
     @include middle-content;
   }
 
@@ -15,18 +15,31 @@
   color: $black;
 }
 
+.features__list {
+  font-size: 0;
+}
+
 .features__item {
   display: inline-block;
-  width: 300px;
+  width: 33.3%;
   vertical-align: top;
+  padding: 0 10px;
 }
 
 .features__icon {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
   margin-bottom: 35px;
+
+  &-pic {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .features__title {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-family: "lifehack", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 24px;
 }

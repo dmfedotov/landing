@@ -48,7 +48,7 @@
             </div>
           </div>
         </header>
-        <div class="burger-content">
+        <div class="burger__content">
           <div class="container">
             <div class="burger-content__left">
               <div class="burger-content__photo">
@@ -57,7 +57,7 @@
             </div>
             <div class="burger-content__right">
               <div class="section-title">Мы делаем</div>
-              <div  class="burger-content__desc">Натуральные бургеры</div>
+              <div class="burger-content__desc">Натуральные бургеры</div>
             </div>
           </div>
         </div>
@@ -69,111 +69,147 @@
 
     <section class="section features">
       <div class="container">
-        <div class="features-content">
-          <div class="section-title section-title_black">Мы лучшие</div>
-          <ul class="features__list">
-            <li class="features__item">
-              <div class="features__icon">
-                <img src="img/icons/meat.svg" alt="" class="features__icon-pic">
-              </div>
-              <div class="features__title">100% свежее мясо</div>
-              <div class="features__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
-            </li>
-            <li class="features__item">
-              <div class="features__icon">
-                <img src="img/icons/hand.svg" alt="" class="features__icon-pic">
-              </div>
-              <div class="features__title">Ручная сборка</div>
-              <div class="features__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает
-                сюжетный реформаторский пафос.</div>
-            </li>
-            <li class="features__item">
-              <div class="features__icon">
-                <img src="img/icons/natural.svg" alt="" class="features__icon-pic">
-              </div>
-              <div class="features__title">Натуральные ингредиенты</div>
-              <div class="features__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
-            </li>
-          </ul>
+        <div class="features__content">
+          <div class="container">
+            <div class="section-title section-title_black">Мы лучшие</div>
+            <ul class="features__list">
+              <li class="features__item">
+                <div class="features__icon">
+                  <svg class="features__icon-pic" fill="#E35028">
+                    <use xlink:href="img/icons/sprite.svg#meat"></use>
+                  </svg>
+                </div>
+                <div class="features__title">100% свежее мясо</div>
+                <div class="features__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+              </li>
+              <li class="features__item">
+                <div class="features__icon">
+                  <svg class="features__icon-pic" fill="#F9B43B">
+                    <use xlink:href="img/icons/sprite.svg#hand"></use>
+                  </svg>
+                </div>
+                <div class="features__title">Ручная сборка</div>
+                <div class="features__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает
+                  сюжетный реформаторский пафос.</div>
+              </li>
+              <li class="features__item">
+                <div class="features__icon">
+                  <svg class="features__icon-pic" fill="#8BC03F">
+                    <use xlink:href="img/icons/sprite.svg#natural"></use>
+                  </svg>
+                </div>
+                <div class="features__title">Натуральные ингредиенты</div>
+                <div class="features__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section slider">
-      <div class="container">
-        <div class="slider-content">
-          <div class="slider-controls">
-            <a href="#" class="slider-btn slider-btn_prev"></a>
-            <a href="#" class="slider-btn slider-btn_next"></a>
-          </div>
-          <ul class="slide">
-            <li class="slide__item">
-              <div class="slide__left">
+    <section class="section slider-burger">
+      <div class="slider-burger__content">
+        <div class="container">
+          <div class="slider-content-wrap">
+            <div class="slider-burger__controls">
+              <a href="#" class="slider-burger__btn slider-burger__btn_prev"></a>
+              <a href="#" class="slider-burger__btn slider-burger__btn_next"></a>
+            </div>
+            <ul class="slide">
+              <li class="slide__item">
                 <div class="ingredients">
                   <div class="ingredients__icon">
-                    <img src="#" alt="" class="ingredients__icon-pic">
+                    <svg class="ingredients__icon-pic" fill="#FFFFFF">
+                      <use xlink:href="img/icons/sprite.svg#burger"></use>
+                    </svg>
                     <div class="ingredients__icon-text">Состав</div>
                   </div>
                   <ul class="ingredients__dropdown">
                     <li class="ingredients__dropdown-item">
                       <div class="ingredients__dropdown-icon">
-                        <img src="#" alt="" class="ingredients__dropdown-icon-pic">
+                        <svg class="ingredients__dropdown-icon-pic" fill="#FFFFFF">
+                          <use xlink:href="img/icons/sprite.svg#beef" fill="#E35028"></use>
+                        </svg>
                       </div>
                       <div class="ingredients__dropdown-name">Говядина</div>
                       <div class="ingredients__dropdown-weight">300 г</div>
                     </li>
                     <li class="ingredients__dropdown-item">
                       <div class="ingredients__dropdown-icon">
-                        <img src="#" alt="" class="ingredients__dropdown-icon-pic">
+                        <svg class="ingredients__dropdown-icon-pic" fill="#FFFFFF">
+                          <use xlink:href="img/icons/sprite.svg#buns" fill="#F9B43B"></use>
+                        </svg>
                       </div>
                       <div class="ingredients__dropdown-name">Булочки</div>
                       <div class="ingredients__dropdown-weight">100 г</div>
                     </li>
                     <li class="ingredients__dropdown-item">
                       <div class="ingredients__dropdown-icon">
-                        <img src="#" alt="" class="ingredients__dropdown-icon-pic">
+                        <svg class="ingredients__dropdown-icon-pic" fill="#FFFFFF">
+                          <use xlink:href="img/icons/sprite.svg#salad" fill="#8BC03F"></use>
+                        </svg>
                       </div>
                       <div class="ingredients__dropdown-name">Зелень</div>
                       <div class="ingredients__dropdown-weight">70 г</div>
                     </li>
                     <li class="ingredients__dropdown-item">
                       <div class="ingredients__dropdown-icon">
-                        <img src="#" alt="" class="ingredients__dropdown-icon-pic">
+                        <svg class="ingredients__dropdown-icon-pic" fill="#FFFFFF">
+                          <use xlink:href="img/icons/sprite.svg#sauce" fill="#E35028"></use>
+                        </svg>
                       </div>
                       <div class="ingredients__dropdown-name">Соус</div>
                       <div class="ingredients__dropdown-weight">150г</div>
                     </li>
                     <li class="ingredients__dropdown-item">
                       <div class="ingredients__dropdown-icon">
-                        <img src="#" alt="" class="ingredients__dropdown-icon-pic">
+                        <svg class="ingredients__dropdown-icon-pic" fill="#FFFFFF">
+                          <use xlink:href="img/icons/sprite.svg#cucumber" fill="#8BC03F"></use>
+                        </svg>
                       </div>
                       <div class="ingredients__dropdown-name">Овощи</div>
-                      <div class="ingredients__weight">200 г</div>
+                      <div class="ingredients__dropdown-weight">200 г</div>
                     </li>
                     <li class="ingredients__dropdown-item">
                       <div class="ingredients__dropdown-icon">
-                        <img src="#" alt="" class="ingredients__dropdown-icon-pic">
+                        <svg class="ingredients__dropdown-icon-pic" fill="#FFFFFF">
+                          <use xlink:href="img/icons/sprite.svg#cheese" fill="#F9B43B"></use>
+                        </svg>
                       </div>
                       <div class="ingredients__dropdown-name">Сыр</div>
                       <div class="ingredients__dropdown-weight">80 г</div>
                     </li>
                   </ul>
                 </div>
-                <div class="slide__photo">
-                  <img src="#" alt="" class="slide__photo-item">
+                <div class="slider-burger-weight">
+                  <div class="slider-burger-weight__icon">
+                    <svg class="slider-burger-weight__icon-pic" fill="#FFFFFF">
+                      <use xlink:href="img/icons/sprite.svg#kkal" fill="#FFFFFF"></use>
+                    </svg>
+                    <div class="slider-burger-weight__value">1200</div>
+                  </div>
+                  <div class="slider-burger-weight__title">ккал</div>
                 </div>
-              </div>
-              <div class="slide__right">
-                <div class="section-title">Dark Beef Burger</div>
-                <div class="slide__desc">
-                  <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь,
-                    двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                <div class="slide__left">
+                  <div class="slide__photo">
+                    <img src="img/content/burger-black.png" alt="Dark Beef Burger" class="slide__photo-item">
+                  </div>
                 </div>
-                <div class="slide__price">500 рублей</div>
-                <a href="#" class="btn btn_buy_slider">Заказать</a>
-              </div>
-            </li>
-          </ul>
+                <div class="slide__right">
+                  <div class="section-title section-title_white">Dark Beef Burger</div>
+                  <div class="slide__desc">
+                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь,
+                      двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                  </div>
+                  <div class="slide__price">
+                    <span class="slide__price-value">500</span> <span class="slide__price-text">рублей</span>
+                  </div>
+                  <a href="#" class="btn btn_buy_slider">Заказать</a>
+                </div>
+
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

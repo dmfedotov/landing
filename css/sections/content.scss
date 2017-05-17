@@ -4,7 +4,7 @@
 
   &-title {
     display: inline-block;
-    font-family: "gagalin";
+    font-family: "gagalin", Arial, Helvetica, sans-serif;
     font-size: 72px;
     color: $yellow;
   }
@@ -20,4 +20,9 @@
   text-decoration: none;
   border-radius: 5px;
   background: $red;
+  transition: background .3s;
+
+  &:hover {
+    background: #c1401e;
+  }
 }
