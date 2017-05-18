@@ -1,0 +1,56 @@
+.footer {
+  padding-top: 8px;
+}
+
+.footer__left,
+.footer__right {
+  float: left;
+  width: 50%;
+}
+
+.footer__addres {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.footer__phone-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.footer__phone-icon-pic {
+  max-width: 12px;
+  max-height: 11px;
+}
+
+.footer_phone-text {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 600;
+  color: $red;
+}
+
+.footer__right {
+  padding-top: 12px;
+  text-align: right;
+}
+
+.social__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.social__link:hover .social__icon {
+  fill-opacity: 1;
+}
+
+.social__icon {
+  display: block;
+  max-width: 20px;
+  max-height: 20px;
+  fill: #fff;
+  fill-opacity: .3;
+  transition: .3s;
+}

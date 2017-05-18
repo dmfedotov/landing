@@ -1,0 +1,93 @@
+.team {
+  position: relative;
+  background: url("../img/bg/team-bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.team__block {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  padding: 7% 2% 0 6%;
+  background-color: rgba(#2f3234, .93);
+}
+
+.section-title_margin_team {
+  margin-bottom: 75px;
+}
+
+.team-accord__item {
+  margin-bottom: 40px;
+}
+
+.team-accord__trigger {
+  position: relative;
+  font-family: "gagalin", Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -18px;
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top: -2px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid $yellow;
+  }
+}
+
+.team-accord__trigger_active {
+  color: $yellow;
+
+  &::before {
+    transform: rotate(180deg);
+  }
+}
+
+
+.team-accord__content {
+  @extend %clearfix;
+  height: 0;
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+.team-accord__ava {
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+
+.team-accord__pic {
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.team-accord__text {
+  float: right;
+  width: 70%;
+}
+
+.team-accord__title {
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.team-accord__desc {
+  color: #fff;
+}

@@ -1,0 +1,66 @@
+.menu {
+  position: relative;
+  background: url("../img/bg/menu-bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.section-title_menu {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.menu-accord {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  @extend %clearfix;
+}
+
+.menu-accord__item {
+  float: left;
+  height: 100%;
+}
+
+.menu-accord__trigger {
+  position: relative;
+  float: left;
+  display: block;
+  width: 80px;
+  height: 100%;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.menu-accord__trigger-text {
+  position: absolute;
+  top: 50%;
+  left: -273px;
+  width: 650px;
+  height: 80px;
+  margin-top: -40px;
+  transform: rotate(-90deg);
+  font-family: "gagalin", Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.menu-accord__content {
+  float: left;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(#2f3234, .93);
+}
+
+.menu-accord__text {
+  width: 540px;
+  padding: 60px 35px;
+  color: #fff;
+  line-height: 1.8;
+}

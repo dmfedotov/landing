@@ -1,0 +1,176 @@
+.order {
+  position: relative;
+  background: url("../img/bg/order-bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.section-title_order {
+  margin-bottom: 80px;
+}
+
+.order-content {
+  @include middle-content;
+  text-align: center;
+}
+
+.order-form,
+.order__form-row_two,
+.order__form-row_four {
+  @extend %clearfix;
+}
+
+.order__form-row_two,
+.order__form-row_four {
+  margin-left: -20px;
+}
+
+.order__form-left,
+.order__form-right {
+  float: left;
+  width: 45%;
+  margin-left: 5%;
+}
+
+.order__form-row {
+  margin-bottom: 5px;
+}
+
+.order__form-block {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.order__form-row_two .order__form-block {
+  float: left;
+  width: calc(100% / 2 - 20px);
+  margin-left: 20px;
+}
+
+.order__form-title {
+  margin-bottom: 15px;
+  color: #fff;
+  text-align: left;
+}
+
+.order__form-name,
+.order__form-phone,
+.order__form-street,
+.order__form-house,
+.order__form-housing,
+.order__form-flat,
+.order__form-floor,
+.order__form-comment {
+  @include input;
+
+  &:focus {
+    border: 2px solid #f9b43b;
+  }
+}
+
+.order__form-row_four .order__form-block {
+  float: left;
+  width: calc(100% / 4 - 20px);
+  margin-left: 20px;
+}
+
+.order__form-comment {
+  height: 110px;
+  resize: none;
+}
+
+.order__form-row_pay,
+.order__form-row_check,
+.order__form-row_buttons {
+  margin-bottom: 17px;
+  text-align: left;
+}
+
+.order__form-pay,
+.order__form-check {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.order__form-pay-elem,
+.order__form-check-elem {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.order__form-pay-point {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: #e35028;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width .3s, height .3s;
+  }
+}
+
+.order__form-pay-elem:checked + .order__form-pay-point::before {
+  width: 8px;
+  height: 8px;
+}
+
+.order__form-pay-title {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6px;
+  color: #fff;
+}
+
+.order__form-pay-point_check {
+  border-radius: 0;
+}
+
+.order__form-pay-point_check-pic {
+  position: absolute;
+  top: 50%;
+  left: 51%;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+  transition: width .3s, height .3s;
+}
+
+.order__form-check-elem:checked + .order__form-pay-point_check .order__form-pay-point_check-pic {
+  width: 10px;
+  height: 9px;
+}
+
+.order__form-btn {
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.order__form-btn_reset {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  text-transform: none;
+
+  &:hover {
+    background: none;
+  }
+}

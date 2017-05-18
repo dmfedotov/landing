@@ -12,6 +12,40 @@
   position: relative;
 }
 
+.slider-burger__btn {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+
+  &:hover .slider-burger__btn-icon {
+    top: 45%;
+    width: 33px;
+    height: 20px;
+  }
+}
+
+.slider-burger__btn_prev {
+  left: -50px;
+  transform: rotate(90deg) translateX(-50%);
+}
+
+.slider-burger__btn_next {
+  right: -50px;
+  transform: rotate(-90deg) translateX(50%);
+}
+
+.slider-burger__btn-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 14px;
+  fill: #fff;
+  transform: translate(-50%, -50%);
+  transition: .3s;
+}
+
 .slide__item {
   position: relative;
   @extend %clearfix;
@@ -26,7 +60,7 @@
   width: 90px;
   height: 90px;
   border-radius: 5px;;
-  background-color: rgba(227, 80, 40, .4);
+  background-color: rgba($red,.4);
   transition: background-color .3s;
 
   &:hover {
@@ -38,6 +72,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    fill: #fff;
   }
 }
 
@@ -84,6 +119,30 @@
   margin-right: 25px;
 }
 
+.ingredients__icon-pic_beef {
+  fill: $red;
+}
+
+.ingredients__icon-pic_buns {
+  fill: $yellow;
+}
+
+.ingredients__icon-pic_salad {
+  fill: #8BC03F;
+}
+
+.ingredients__icon-pic_sauce {
+  fill: $red;
+}
+
+.ingredients__icon-pic_cucumber {
+  fill: #8BC03F;
+}
+
+.ingredients__icon-pic_cheese {
+  fill: $yellow;
+}
+
 .ingredients__dropdown-name {
   display: table-cell;
   padding: 15px 0;
@@ -106,6 +165,7 @@
   display: block;
   max-width: 60px;
   max-height: 60px;
+  fill: #fff;
 }
 
 .slider-burger-weight {
