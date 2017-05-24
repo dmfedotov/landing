@@ -48,6 +48,11 @@
   color: #fff;
   text-align: center;
   white-space: nowrap;
+  transition: .2s;
+}
+
+ .menu-accord__item.active .menu-accord__trigger-text {
+  color: $yellow;
 }
 
 .menu-accord__content {
@@ -56,6 +61,7 @@
   height: 100%;
   overflow: hidden;
   background-color: rgba(#2f3234, .93);
+  transition: .5s;
 }
 
 .menu-accord__text {
