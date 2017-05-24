@@ -112,6 +112,7 @@ $(function () {
   var sections = $(".section");
   var inScroll  = false;
 
+  // Механика OPS
   var transition = function (sectionEq) {
     if (inScroll) return;
     inScroll = true;
@@ -134,34 +135,22 @@ $(function () {
 
   };
 
+  // Смена секций
   $(".wrapper").on("wheel", function (e) {
     var activeSection = sections.filter(".active-section");
     var prevSection = activeSection.prev();
     var nextSection = activeSection.next();
     
-    if (e.originalEvent.deltaY > 0 && nextSection.length) {//скроллим вниз
+    if (e.originalEvent.deltaY > 0 && nextSection.length) {
       transition(nextSection.index());
     }
 
-    if (e.originalEvent.deltaY < 0 && prevSection.length) {//скроллим вверх
+    if (e.originalEvent.deltaY < 0 && prevSection.length) {
       transition(prevSection.index());
     }
   });
 
-  $(".nav__link").click(function (e) { 
-    e.preventDefault();
-    
-    var href = parseInt($(this).attr("href"));
-    transition(href);
-  });
-
-  $(".fixed-menu__link").click(function (e) { 
-    e.preventDefault();
-    
-    var href = parseInt($(this).attr("href"));
-    transition(href);
-  });
-
+  // Навигация по секциям
   $("[data-section-target]").click(function (e) { 
     e.preventDefault();
     
