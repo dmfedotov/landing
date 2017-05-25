@@ -12,7 +12,6 @@
 .burger-content__left,
 .burger-content__right  {
   float: left;
-  width: 50%;
 }
 
 .burger-content__photo {
@@ -24,7 +23,12 @@
   }
 }
 
+.burger-content__left {
+  width: 51%;
+}
+
 .burger-content__right {
+  width: 49%;
   padding-top: 132px;
 }
 

@@ -55,7 +55,7 @@
 .ingredients {
   position: absolute;
   top: 10px;
-  left: 25px;
+  left: 0;
   display: block;
   width: 90px;
   height: 90px;
@@ -170,7 +170,7 @@
 
 .slider-burger-weight {
   position: absolute;
-  left: 25px;
+  left: 0;
 
   &__icon-pic {
     fill-opacity: .5;
@@ -209,13 +209,16 @@
 .slide__right {
   float: right;
   width: 49%;
-  padding-top: 52px;
 }
 
 .section-title_white {
   margin-bottom: 10px;
   color: #fff;
   line-height: 1em;
+}
+
+.slide__desc {
+  margin-bottom: 23px;
 }
 
 .slide__desc p {
@@ -225,7 +228,7 @@
 
 .slide__price {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 20px;
   font-family: "gagalin", Arial, Helvetica, sans-serif;
   color: $red;
   vertical-align: middle;

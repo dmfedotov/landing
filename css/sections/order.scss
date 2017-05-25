@@ -5,7 +5,7 @@
 }
 
 .section-title_order {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .order-content {
@@ -13,7 +13,7 @@
   text-align: center;
 }
 
-.order-form,
+.order__form,
 .order__form-row_two,
 .order__form-row_four {
   @extend %clearfix;
@@ -26,18 +26,19 @@
 
 .order__form-left,
 .order__form-right {
+  width: 49%;
+}
+
+.order__form-left {
   float: left;
-  width: 45%;
-  margin-left: 5%;
+}
+
+.order__form-right {
+  float: right;
 }
 
 .order__form-row {
-  margin-bottom: 5px;
-}
-
-.order__form-block {
-  display: block;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .order__form-row_two .order__form-block {
@@ -47,7 +48,7 @@
 }
 
 .order__form-title {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   color: #fff;
   text-align: left;
 }

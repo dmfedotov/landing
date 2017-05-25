@@ -10,16 +10,20 @@
   bottom: 0;
   right: 0;
   width: 50%;
-  padding: 7% 2% 0 6%;
+  padding: 7% 2% 0 8%;
   background-color: rgba(#2f3234, .93);
 }
 
 .section-title_margin_team {
-  margin-bottom: 75px;
+  margin-bottom: 60px;
+}
+
+.team-accord {
+  margin-left: 14px;
 }
 
 .team-accord__item {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .team-accord__trigger {
@@ -64,7 +68,7 @@
 .team-accord__ava {
   float: left;
   width: 30%;
-  text-align: center;
+  text-align: left;
 }
 
 .team-accord__pic {

@@ -17,9 +17,9 @@
 @mixin input ($width: 100%) {
   display: block;
   width: $width;
-  height: 30px;
+  height: 35px;
   padding: 5px 10px;
   border: 1px solid #d1cfcb;
-  border-radius: 3px;
+  border-radius: 5px;
   outline: none;
 }
