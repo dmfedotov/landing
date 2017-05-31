@@ -17,35 +17,37 @@
       <section class="section burger active-section">
         <div class="container">
           <header class="header">
-            <div class="header__logo">
-              <div class="logo">
-                <img src="img/icons/logo.svg" alt="Логотип" class="logo-pic">
+            <div class="container">
+              <div class="header__logo">
+                <div class="logo">
+                  <img src="img/icons/logo.svg" alt="Логотип" class="logo-pic">
+                </div>
               </div>
-            </div>
-            <div class="header__menu">
-              <nav class="nav">
-                <ul class="nav__list">
-                  <li class="nav__item">
-                    <a class="nav__link" data-section-target href="0">О нас</a>
-                  </li>
-                  <li class="nav__item">
-                    <a class="nav__link" data-section-target href="1">Бургеры</a>
-                  </li>
-                  <li class="nav__item">
-                    <a class="nav__link" data-section-target href="2">Команда</a>
-                  </li>
-                  <li class="nav__item">
-                    <a class="nav__link" data-section-target href="3">Меню</a>
-                  </li>
-                  <li class="nav__item">
-                    <a class="nav__link" data-section-target href="4">Отзывы</a>
-                  </li>
-                  <li class="nav__item nav__item_margin_none nav__item_point_none">
-                    <a class="nav__link" data-section-target href="5">Контакты</a>
-                  </li>
-                </ul>
-              </nav>
-              <a href="6" data-section-target class="btn btn_buy_header-menu">Заказать</a>
+              <div class="header__menu">
+                <nav class="nav">
+                  <ul class="nav__list">
+                    <li class="nav__item">
+                      <a class="nav__link" data-section-target href="0">О нас</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link" data-section-target href="1">Бургеры</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link" data-section-target href="2">Команда</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link" data-section-target href="3">Меню</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link" data-section-target href="4">Отзывы</a>
+                    </li>
+                    <li class="nav__item nav__item_margin_none nav__item_point_none">
+                      <a class="nav__link" data-section-target href="5">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+                <a href="6" data-section-target class="btn btn_buy_header-menu">Заказать</a>
+              </div>
             </div>
           </header>
           <div class="burger__content">
@@ -808,7 +810,7 @@
         <div class="order-content">
           <div class="container">
             <div class="section-title section-title_order">Закажите доставку</div>
-            <form class="order__form" action="#" method="post" name="form">
+            <form class="order__form" action="mail.php" method="post" name="form">
               <div class="order__form-left">
                 <div class="order__form-row order__form-row_two">
                   <label class="order__form-block">
@@ -886,7 +888,7 @@
       </section>
 
       <section class="section map">
-        <div class="yandex-map"></div>
+        <div id="yandex-map"></div>
 
         <footer class="footer">
           <div class="container">
@@ -994,6 +996,7 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.inputmask.bundle.js"></script>
   <script src="js/main.js"></script>

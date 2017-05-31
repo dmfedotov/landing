@@ -95,11 +95,17 @@
 }
 
 .status-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
   width: 196px;
   padding: 20px;
   text-align: center;
   background: #fff;
   border-radius: 5px;
+  box-shadow: 0 20px 40px rgba(0, 1, 1, .75);
+  transform: translate(-50%, -50%);
 }
 
 .status-popup__name {

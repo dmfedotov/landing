@@ -159,3 +159,128 @@ $(function () {
   });
 
 });
+
+// Yandex map
+$(function () {
+
+  ymaps.ready(init);
+  var map,
+      myPlacemark1, 
+      myPlacemark2, 
+      myPlacemark3,
+      myPin; 
+
+  function init() {
+      map = new ymaps.Map("yandex-map", {
+        center: [56.28997488, 43.93007878],
+        zoom: 16
+      });
+
+      map.behaviors.disable([
+        "scrollZoom"
+      ]);
+
+      map.controls
+        .remove('geolocationControl')
+        .remove('searchControl')
+        .remove('trafficControl')
+        .remove('typeSelector')
+        .remove('fullscreenControl')
+        .remove('zoomControl')
+        .remove('rulerControl');
+
+      myPin = new ymaps.GeoObjectCollection({}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/icons/map-marker.svg',
+        iconImageSize: [46, 57.727],
+        iconImageOffset: [-25, -57.727] 
+      });
+
+      myPlacemark1 = new ymaps.Placemark([56.28735271, 43.92825324], {
+        
+      });
+
+      myPlacemark2 = new ymaps.Placemark([56.28839695, 43.93164355], {
+        
+      });
+
+      myPlacemark3 = new ymaps.Placemark([56.29123117, 43.93341240], {
+        
+      });
+
+      myPin.add(myPlacemark1).add(myPlacemark2).add(myPlacemark3);
+      map.geoObjects.add(myPin);
+
+  }
+
+});
+
+
+// Отправка формы
+$(function () {
+
+  $(".order__form").on("submit", function (e) {
+    e.preventDefault();
+    var form = $(this),
+        formData = form.serialize();
+
+    $.ajax({
+      url: "../mail.php",
+      type: "POST",
+      data: formData,
+      success: function (data) {
+        if (data.status) {
+            $(".overlay").fadeIn(100, function () {
+              $(".status-popup_success").fadeIn(300).addClass("popup_active");
+            });
+
+          // Close
+          $(".btn_close_popup, .overlay").click(function (e) {
+            e.preventDefault();
+
+            $(".status-popup_success").fadeOut(300, function () {
+              $(".overlay").fadeOut(100);
+            }).removeClass("popup_active");
+          });
+
+          // Close Esc
+          $(window).keydown(function (e) {
+            if (e.keyCode === 27) {
+              if ($(".status-popup_success").hasClass("popup_active")) {
+                $(".status-popup_success").fadeOut(300, function () {
+                  $(".overlay").fadeOut(100);
+                }).removeClass("popup_active");
+              }
+            }
+          });
+
+
+        } else {
+          $(".overlay").fadeIn(100, function () {
+              $(".status-popup_error").fadeIn(300).addClass("popup_active");
+            });
+
+          // Close
+          $(".btn_close_popup, .overlay").click(function (e) {
+            e.preventDefault();
+
+            $(".status-popup_error").fadeOut(300, function () {
+              $(".overlay").fadeOut(100);
+            }).removeClass("popup_active");
+          });
+
+          // Close Esc
+          $(window).keydown(function (e) {
+            if (e.keyCode === 27) {
+              if ($(".status-popup_error").hasClass("popup_active")) {
+                $(".status-popup_error").fadeOut(300, function () {
+                  $(".overlay").fadeOut(100);
+                }).removeClass("popup_active");
+              }
+            }
+          });
+        }
+      }   
+    })
+  });
+});
